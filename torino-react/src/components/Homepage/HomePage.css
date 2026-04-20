@@ -1,0 +1,35 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+}
+
+/* Selettore per i bottoni/voci del menu */
+.nav-item {
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 15px; /* Aggiunto un po' di spazio cliccabile */
+  transition: opacity 0.2s;
+}
+
+.nav-item:hover {
+  opacity: 0.8;
+  color: #ffcc00; /* Un tocco di interattività al passaggio del mouse */
+}
+
+/* Stile per l'area del contenuto per non farla finire sotto la nav */
+.main-content {
+  margin-top: 60px; /* Deve essere uguale all'altezza della navbar */
+  padding: 20px;
+}

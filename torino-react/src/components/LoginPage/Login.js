@@ -18,7 +18,7 @@ function Login() {
     }
     console.log('Login attempted with:', { username, password });
     // login service to do
-	navigate("/homePage");
+	  navigate("/homepage");
   };
 
   return (
