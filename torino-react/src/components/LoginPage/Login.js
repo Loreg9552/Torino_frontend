@@ -13,10 +13,10 @@ function Login() {
     event.preventDefault();
 	setError('');
     if (!username || !password) {
-      setError('Please enter both username and password.');
+      setError('Perfavore inserisci sia username e password.');
       return;
     }
-    console.log('Login attempted with:', { username, password });
+    console.log('Login eseguito con:', { username, password });
     // login service to do
 	  navigate("/homepage");
   };
@@ -31,7 +31,7 @@ function Login() {
               <Form.Label>username</Form.Label>
               <Form.Control
                 type="username"
-                placeholder="Enter username"
+                placeholder="Inserisci username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
@@ -41,7 +41,7 @@ function Login() {
               <Form.Label>Password</Form.Label>
               <Form.Control
                 type="password"
-                placeholder="enter password"
+                placeholder="Inserisci password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
